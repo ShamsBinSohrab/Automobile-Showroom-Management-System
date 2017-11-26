@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css?family=Ovo');
+*{
+	margin:0;
+	padding:0
+}
+body{
+	 background:url(../image/car.jpg) no-repeat #2E2D32;
+	 background-position: center;
+	 background-size: cover;
+	}
+img{
+	max-width:100%;
+}
+a{
+	text-decoration:none;
+}
+fieldset{
+	width:300px;
+	margin:auto;
+	height:100%;
+	background-color:#000;
+	margin-top:100px;
+	border-radius:10%;
+	padding: 25px;
+}
+input{
+	width:300px;
+	margin: 10px;
+	padding:10px;
+	border-radius:5px;
+	color: #999;
+}
+input[type="checkbox"]{
+	width: 13px;
+	margin: 0 auto;
+	margin-right: 5px;
+}
+input[type="submit"]{
+	width:100px;
+	margin-left:117px;
+	background-color:#556C53;
+	border-radius:5px;
+	font-weight:bolder;
+	font-family: 'Ovo', serif;
+}
+p{
+	margin: 10px;
+	font-weight:bolder;
+	color:#2E2D32;
+	float: left;
+}
+img{
+	margin:auto;
+	display: block;
+	margin-top:10px;
+	margin-bottom:10px;
+}

@@ -1,0 +1,773 @@
+/*CSS For Index Page*/
+
+@import url('https://fonts.googleapis.com/css?family=Ovo|Slabo+27px');
+
+*{
+	box-sizing: border-box;
+	padding: 0;
+	margin:0;
+}
+a{
+	text-decoration: none;
+}
+body{
+	background: #282828;
+}
+
+
+.row{
+	width: 97%;
+	overflow: hidden;
+	margin-top: 20px;
+}
+.col-4 {
+    width: 32%;
+    margin-left: 1.33%;
+    height: 200px;
+    /*border: 1px solid #000;*/
+    float: left;
+    overflow: hidden;
+    margin-top: 10px;
+    position: relative;
+}
+.col-4 img{
+	width: 100%;
+	height: 100%;
+}
+
+.main{
+	width:1300px;
+	margin:20px auto;
+	display:block;
+	overflow:hidden;
+	height: auto;
+}
+
+/*Menu & Logo*/
+
+.logo img{
+	height: 70px;
+	width: 70px;
+}
+.menu{
+	overflow:hidden;
+	background: #1D1D1D;
+	width: 100%;
+	font-family: 'Ovo', serif;
+}
+.menu ul{
+	list-style:none;
+	margin-left:100px;
+}
+.menu ul li{
+	background-color:#1D1D1D;
+	float:left;
+	padding-top: 20px;
+}
+
+.menu ul li:nth-child(2) a{
+	padding-top: 10px;
+	padding-bottom: 0;
+	font-size: 30px;
+}
+.menu ul li:nth-child(1){
+	padding-top: 0;
+}
+.menu ul li:nth-child(2){
+	width: 300px;
+	margin-left: 50px;
+	font-family: 'Slabo 27px', serif;
+	padding-top: 0;
+}
+.menu ul li:nth-child(2):hover a{
+	color: #999;
+}
+
+.menu ul li:nth-child(3){
+	padding-left: 150px;
+}
+
+
+.menu ul li a{
+	text-decoration:none;
+	color:white;
+	display:block;
+	padding:10px 20px;
+	font-size: 25px;
+	color: #999;
+}
+.menu ul li a:hover{
+	color:#fff;
+}
+.marquee{
+	text-align: left;
+	position: relative;
+	padding: 10px 0;
+}
+small{
+	font-size: 16px;
+	position: absolute;
+	left: 0;
+	bottom: -15px;
+}
+.access a{
+	color:#fff !important;
+	font-family: 'Ovo', serif;
+}
+li.access a:hover{
+	color: #1A78E2 !important;
+}
+
+/*Slider*/
+
+.slider{
+	height:500px;
+	width:1300px;
+	overflow: hidden;
+	position: relative;
+	margin: 0 auto;
+	}
+
+.slider img{
+ font-family:bold;
+ font-size:100px;
+ color:#000;
+ position: absolute;
+ width: 100%;
+ height: 100%;
+ text-align: center;
+}
+
+.slider_caption{
+	position: absolute;
+	left: 35%;
+	top:30%;
+	font-size: 45px;
+}
+
+
+.mySlides {
+	display:none;
+}
+
+.fading {
+	animation:fading 10s infinite
+	}
+@keyframes fading {
+	0%{opacity:0}
+	50%{opacity:1}
+	100%{opacity:0}
+}
+
+
+.search{
+	width: 100%;
+	margin:30px auto;
+	text-align: center;
+}
+.filter{
+	background: #282828;
+	width: 15%;
+	height: 500px;
+	float: left;
+	border-right: 2px solid #999;
+}
+.search_bar{
+	width: 70%;
+	float: left;
+	padding-left: 15px;
+}
+.offer{
+	background: #282828;
+	width: 15%;
+	height: 500px;
+	float: left;
+	/*border: 2px solid #000;*/
+}
+hr{
+
+	border-color: #fff;
+}
+.filter select{
+	width: 80%;
+	margin-bottom: 20px;
+	font-size: 20px;
+	font-family: 'Ovo', serif;
+}
+.brand,.year,.color{
+	margin: 0 auto;
+	height: 40px;
+	font-weight: bold;
+	color: #fff;
+	background: #1E1E1E;
+	cursor: pointer;
+
+}
+.brand{
+	margin-top: 20px;
+}
+
+.offer ul{
+	margin-top: 20px;
+	font-family: 'Slabo 27px', serif;
+}
+.offer ul li{
+	margin:5px 0;
+}
+.offer ul a{
+	color: #999;
+}
+.offer ul a:hover{
+	color: #fff;
+}
+.offer h2{
+	color: #fff;
+	font-size: 40px;
+	font-family: 'Slabo 27px', serif;
+}
+.arrow{
+	font-size: 20px;
+	font-weight: 900;
+
+}
+.search_bar input[type="submit"] {
+    padding: 13px 2px;
+    padding-bottom: 10px;
+    font-size: 20px;
+    color: #fff;
+    background: #1D1D1D;
+    width: 10%;
+    border-color: #1E1E1E;
+    font-weight: bolder;
+    font-family: 'Ovo', serif;
+    cursor: pointer;
+}
+.search_bar input[type="text"] {
+    width: 87%;
+    height: 50px;
+    font-size: 20px;
+    font-family: 'Slabo 27px', serif;
+    text-align: left;
+}
+.search_bar form {
+    margin-right: 16px;
+}
+
+.grid_caption{
+	position: absolute;
+	left: 0;
+	bottom: -100%;
+	padding: 35% 0;
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;
+	text-align: center;
+	font-weight: bolder;
+	font-size: 20px;
+	background-color: rgba(5, 8, 2, 0.4);
+	color: #fff;
+	content: "";
+	transition: all 0.5s ease 0s;
+	border: 2px solid #000;
+    font-family: 'Slabo 27px', serif;
+}
+.row .col-4:hover .grid_caption{
+	bottom: 0;
+}
+.footer{
+	background: #1D1D1D;
+	height: 40px;
+	margin-bottom: 20px;
+	color: #fff;
+	margin-top: 20px;
+}
+.footer p{
+	text-align: center;
+    font-family: 'Slabo 27px', serif;
+    font-size: 30px;
+}
+
+
+
+/*CSS For Offer Page*/
+
+.offer_details{
+	text-align: center;
+	width: 1300px;
+	height: auto;
+	color: #fff;
+	margin: 10px;
+	font-family: 'Ovo', serif;
+}
+.title{
+	margin: 10px;
+	font-family: 'Ovo', serif;
+}
+
+.maker{
+	margin: 10px;
+	font-family: 'Ovo', serif;
+}
+
+.model{
+	margin: 10px;
+	font-family: 'Ovo', serif;
+}
+
+.model_year{
+	margin: 10px;
+	font-family: 'Ovo', serif;
+}
+
+.details{
+	text-align: justify;
+	margin: 10px;
+	font-family: 'Ovo', serif;
+}
+
+.contact{
+	text-align: right;
+	margin: 10px;
+	font-family: 'Ovo', serif;
+}
+/*CSS for BG*/
+.no_bg{
+		background: #fff;
+}
+/*CSS For ADD Car And Update Inventory*/
+table {
+    border-collapse: collapse;
+}
+
+
+
+.add_new_car table,.add_new_car td,.add_new_car th ,.update_Inventory table,.update_Inventory td,.update_Inventory th,.show_details table, .show_details td,.show_details th {
+    border: 0px solid black;
+    padding:6px;
+}
+.add_new_car td,.update_Inventory td,.show_details td{
+	width: 12.5%;
+}
+.add_new_car input,.update_Inventory input,.show_details input{
+	padding: 10px;
+}
+.form_add_car{
+	margin: 0 auto;
+
+}
+.submit{
+	padding-right: 10px;
+}
+.add_new_car legend,.add_new_car label,.update_Inventory legend,.update_Inventory label,.show_details legend,.show_details label{
+	font-weight: bolder;
+}
+.other-options td:nth-child(even)
+{
+	width: 20.8%;
+}
+.other-options td:nth-child(odd)
+{
+	width: 12.5%;
+}
+.other-options tr td:nth-child(3n){
+	padding-left: 20px;
+}
+.other-options{
+
+}
+.checkbox-options td{
+	width: 33.33%;
+	padding-top: 25px;
+}
+.checkbox-options
+{
+}
+
+/*CSS For Add Inventory*/
+
+
+.add_new_car sup{
+	font-size: 14px;
+	font-weight: 900;
+}
+.add_new_car img.car_photo{
+	float: right;
+	padding-right: 60px;
+	height: 100px;
+	width: 100px;
+}
+.#image-rendering: {
+	padding-bottom: 2px;
+}
+
+/*CSS For Update inventory*/
+
+.btn{padding: 10px;}
+
+
+
+/*CSS For Show*/
+		 
+		.show_details .options{
+			width: 100%;
+		}
+		.show_details .submit button{
+			width: 100px;
+			padding: 10px;
+			font-weight: 900;
+			background-color: #498AF3;
+		}
+		.show_details .submit input{
+			width: 70px;
+			padding: 10px;
+			font-weight: 900;
+			background-color: #498AF3;
+		}
+		.show_details legend,.show_Details_Service label{
+			font-weight: bolder;
+		}
+
+		.show_details .other-options td:nth-child(even)
+		{
+			width: 27%;
+		}
+		.show_details .other-options td:nth-child(odd)
+		{
+			width: 33%;
+		}
+		.show_details .other-options td{
+			padding-top: 20px;
+		}
+		.show_details .checkbox-options td{
+			width: 20%;
+			padding-top: 0;
+		}
+		.show_details .checkbox-options
+		{
+		}
+
+
+/*CSS for Inventory*/
+
+.car_inventory table,.car_inventory th,.car_inventory td {
+    border: 1px solid black;
+	padding: 0;
+	border-collapse: collapse;
+	margin: 0 auto;
+}
+.car_inventory td{
+	padding: 10px;
+	width: 120px;	
+}
+.car_inventory .stock tr:nth-child(even)
+{
+	background-color: #ADD8E6;
+}
+.car_inventory a{
+	text-decoration: none;
+	color: #0000FF;
+}
+.car_inventory .search{
+	font-size: 20px;
+}
+.car_inventory .search input{
+	padding: 5px;
+	margin-left: 6px;
+}
+
+
+
+/*css for Document quotation*/
+
+		.document_quotation{
+			width: 680px;
+			margin: 0 auto;
+		}
+		.document_quotation table,.document_quotation tr,.document_quotation td,.document_quotation th{
+			border: 1px solid black;
+			padding: 0;
+			text-align: center;
+			padding: 3px 0;
+		}
+		.document_quotation p,.print_quotation p{
+			text-align: left;
+			position: relative;
+			line-height: 1.6;
+		}
+		.document_quotation td:nth-child(1),.print_quotation td:nth-child(1)
+		{
+			width: 3%;
+		}
+		.document_quotation td:nth-child(2),.print_quotation td:nth-child(2)
+		{
+			width: 25%;
+		}
+		.document_quotation td:nth-child(3),.print_quotation  td:nth-child(3)
+		{
+			width: 72%;
+		}
+		.document_quotation .quotation{
+			margin-top: 40px;
+			margin-left: 20px;
+		}
+		.document_quotation .print,.document_quotation .quotation a button{
+			width: 100px;
+			padding: 10px;
+			font-weight: 900;
+			background-color: #498AF3;
+			margin-top: 20px;
+			float: right;
+			position: fixed;
+			right: 40px;
+			bottom: 50px;
+		}
+		.document_quotation .quotation a button{
+			position: fixed;
+			right: 150px;
+			bottom: 50px;	
+		}
+		.document_quotation #iframe{
+			display: none;
+		}
+		.document_quotation #price {
+			width: 250px;
+			height: 25px;
+		    font-size: 18px;
+		    font-weight: bold;
+		    margin-right: 10px;
+		}
+
+
+/*CSS For Print Quotation*/
+
+.print_quotation {
+	width: 680px;
+}
+.print_quotation table,.print_quotation tr,.print_quotation td,.print_quotation th{
+	border: 1px solid black;
+	padding: 0;
+	padding: 3px 0;
+}
+.print_quotation .date{
+	float: right;
+	position: absolute;
+	right: 20px;
+	top:20px;
+}
+.print_quotation .quotation{
+	position: relative;
+	margin-top: 40px;
+	margin-left: 20px;
+}
+
+/*CSS For Accounts Dashboard*/
+.accounts_dash table {
+	border: 0px solid black;
+	padding: 2px;
+    margin: 20px auto;
+}
+
+.accounts_dash th,.accounts_dash td {
+    border: 0px solid black;
+	padding: 5px;
+}
+    
+.accounts_dash input, .accounts_dash select{
+    padding: 10px;
+    font-weight: bolder;
+}
+.accounts_dash #notification{
+	text-align:center;
+	color:#019601;
+	font-size:25px;
+}
+.accounts_dash #msg{
+	color:#f00;
+}
+.accounts_dash #chassismsg{
+	color:#f00;
+}
+.center{
+	margin: 0 auto;
+}
+/*CSS for Admin Dashboard*/
+
+ 
+.admin_dash input,.admin_dash select{
+    padding: 10px;
+    font-weight: bolder;
+    margin-bottom:30px;
+    margin: 20px auto;
+} 
+.admin_dash input{
+    margin-bottom:30px;
+}
+.admin_dash .row{
+	width: 60%;
+	margin: 0 auto;
+}
+.admin_dash .col-4{
+	width: 25%;
+	border-right: 2px solid #000;
+	float: left;
+	height: 450px;
+	display: block;
+    word-wrap: break-word;
+    padding: 15px;
+}
+.admin_dash .col-8{
+	width: 75%;
+	float: right;
+	height: 450px;
+	display: block;
+    word-wrap: break-word;
+    padding: 15px;
+}
+
+/*CSS for Sales Dashboard*/
+
+
+.sales_dash table,.sales_dash td,.sales_dash th {
+    border: 0px solid black;
+    padding:6px;
+}
+
+.sales_dash td{
+	padding: 10px;
+	padding-top: 20px;
+}
+.sales_dash .btnsales{
+	height: auto;
+	width:13%;
+}
+.sales_dash .btnsales input{
+	padding: 10px;
+	width: 170px;
+	font-weight: bolder;
+	margin-bottom:10px; 
+}
+
+/*Update Rec,Pay,Pur and Sold*/
+
+
+.update_pay_pur table,.update_rec_sold table {
+	border: 0px solid black;
+	padding: 2px;
+	margin: 0 auto;
+}
+
+.update_pay_pur th,.update_pay_pur td ,.update_rec_sold th,.update_rec_sold td {
+    border: 0px solid black;
+	padding: 5px;
+}
+    
+.update_pay_pur input,.update_pay_pur select,.update_rec_sold input,.update_rec_sold select{
+    padding: 10px;
+    font-weight: bolder;
+}
+
+
+
+/*Rec and Pay*/
+
+.rec_pay .table{
+	margin: 20px auto;
+
+}
+
+.rec_pay .table tr,.rec_pay  .table td,.rec_pay  .table th{
+     border: 1px solid black;
+ }
+ .rec_pay .table td, .rec_pay .table th{
+     padding: 10px;
+ }
+ .rec_pay tr:nth-child(even){
+     background-color: #ADD8E6;
+ }
+ 
+ .rec_pay .table th
+ {
+     background-color: #fff;
+ }
+ .rec_pay input,.rec_pay select{
+     padding: 10px;
+     font-weight: bolder;
+  }
+
+  /*Pur and SOld*/
+
+  .pur_sold .table{
+  	margin: 20px auto;
+  }
+  .pur_sold .table table,.pur_sold .table tr,.pur_sold.table td{
+       border-collapse: collapse;
+       padding: 0px;
+   }
+   .pur_sold.table tr, .pur_sold .table td,.pur_sold .table th{
+       border: 1px solid black;
+   }
+   .pur_sold .table td,.pur_sold .table th{
+       padding: 10px 17px;
+   }
+   .pur_sold .table{
+   	margin-top: 30px; 
+   }
+   .pur_sold tr:nth-child(even){
+       background-color: #ADD8E6;
+   }
+   .pur_sold input,.pur_sold select{
+       padding: 10px;
+       font-weight: bolder;
+    }
+
+
+/*Profit And Loss*/
+
+
+	.profit_loss .profitloss{
+		margin: 0 auto;
+	}
+	.profit_loss .profitloss,.profit_loss .profitloss tr,.profit_loss .profitloss th,.profit_loss .profitloss td {
+	     border: 1px solid black;
+	    padding: 0px;
+	 }
+	 .profit_loss .profitloss td,.profit_loss .profitloss th{
+	    padding: 10px; 
+	 }
+	 .profit_loss .profitloss tr:nth-child(even)
+	 {
+	    background-color: #ADD8E6;
+	 }
+	 .profit_loss .profitloss{
+	    margin-top: 30px;
+	 }
+	 .profit_loss input,.profit_loss select{
+	    padding: 10px;
+	    font-weight: bolder;
+	 }
+
+	 /*Balance Sheet*/
+
+
+	 .balance_sheet .balancesheet{
+	 	margin: 0 auto;
+	 }
+
+	 .balance_sheet .balancesheet,.balance_sheet .balancesheet tr,.balance_sheet .balancesheet th,.balance_sheet .balancesheet td {
+	     border: 1px solid black;
+	    padding: 0px;
+	 }
+	 .balance_sheet .balancesheet td,.balance_sheet .balancesheet th{
+	    padding: 10px; 
+	 }
+	 .balance_sheet .balancesheet tr:nth-child(even)
+	 {
+	    background-color: #ADD8E6;
+	 }
+	 .balance_sheet .balancesheet{
+	    margin-top: 30px;
+	 }
+	 .balance_sheet input,.balance_sheet select{
+	    padding: 10px;
+	    font-weight: bolder;
+	 }
